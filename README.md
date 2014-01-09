@@ -17,3 +17,5 @@ In `components/tools/OmeroWeb/omeroweb/urls.py` add a url to test this view at, 
 ```python
 (r'^(?i)cbvtest/', include('cbvtest.urls'))
 ```
+
+This should fail unless https://github.com/openmicroscopy/openmicroscopy/pull/1928 has been applied.
