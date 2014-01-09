@@ -18,4 +18,14 @@ In `components/tools/OmeroWeb/omeroweb/urls.py` add a url to test this view at, 
 (r'^(?i)cbvtest/', include('cbvtest.urls'))
 ```
 
-This should fail unless https://github.com/openmicroscopy/openmicroscopy/pull/1928 has been applied.
+Without https://github.com/openmicroscopy/openmicroscopy/pull/1928
+===================================================================
+
+When not logged in, this should fail.
+If logged in it should display 'Hello World'.
+
+With https://github.com/openmicroscopy/openmicroscopy/pull/1928
+================================================================
+
+When not logged in, should redirect to login page.
+If logged in it should display 'Hello World'.
